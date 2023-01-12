@@ -8,8 +8,9 @@ def shuffler(l):
 
 def enter():
     num=int(input("Pick '0', '1', '2': "))
-    while num in [0,1,2]:
+    if num in [0,1,2]:
         checker(num,l)
+        return
     print('Choose a valid number:')
     enter()
 
